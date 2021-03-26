@@ -48,7 +48,7 @@ function includeUppercase(){
         console.log("user wants to exclude uppercase "+upperCase)
         alert("you have excluded uppercase");}
     }
-
+//declare function to include lower case letters
 function includeLowercase(){
     var lowerCaseResponse = window.confirm("Include lowercase?");
         if (lowerCaseResponse==true) {
@@ -64,5 +64,20 @@ function includeLowercase(){
         alert("you have excluded lowerCase");}
             }
 
-            
+//declare funtion to include numbers
+function includeNumber(){
+    
+    var numericValueResponse = window.confirm("Include numericValue");
+    if (numericValueResponse==true) {
+        numericValue=true;
+        console.log("user wants to inclue numeric value "+numericValue)
+        alert("you have included numericValue");
+    }
+    else {
+        numericValue=false;
+        console.log("user wants to exclude numeric value "+numericValue)
+        alert("you have excluded numeric value");}
+    }
+
+
     
