@@ -48,3 +48,21 @@ function includeUppercase(){
         console.log("user wants to exclude uppercase "+upperCase)
         alert("you have excluded uppercase");}
     }
+
+function includeLowercase(){
+    var lowerCaseResponse = window.confirm("Include lowercase?");
+        if (lowerCaseResponse==true) {
+               
+        lowerCase=true;
+        console.log("user wants to inclue lowerCase "+lowerCase)
+        alert("you have included lowerCase");
+        }
+        else {
+                
+        lowerCase=false;
+        console.log("user wants to exclude lowerCase "+lowerCase)
+        alert("you have excluded lowerCase");}
+            }
+
+            
+    
