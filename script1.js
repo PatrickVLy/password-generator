@@ -79,5 +79,19 @@ function includeNumber(){
         alert("you have excluded numeric value");}
     }
 
+//declare function to include special characters
+function includeSpecialChar(){
+    var specialCharResponse = window.confirm("Include special character?");
+               if (specialCharResponse==true) {
+                specialChar=true;
+                console.log("user wants to inclue special character? "+specialChar)
+                alert("you have included special character?");
+            }
+            else {
+                specialChar=false;
+                console.log("user wants to exclude special character "+specialChar)
+                alert("you have excluded special character");}
+            }
 
+            
     
