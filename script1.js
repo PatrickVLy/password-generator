@@ -123,4 +123,202 @@ array[j] = temp;
 return array;
 };
 
+function createPassword(){
+    getPasswordLength();
+    includeUppercase();
+    includeLowercase();
+    includeNumber();
+    includeSpecialChar()
+
+    if (upperCase === true && lowerCase === true && numericValue === true && specialChar===true){
+        shuffleArray(includeAll);
+        console.log(includeAll);
+        
+var includeAllSlice=includeAll.slice(0, passwordLength);
+console.log(includeAllSlice);
+ var finalPassword= includeAllSlice.join('')
+ console.log(finalPassword);
+ alert(finalPassword);}
+ //upperCase Only
+ else if (upperCase === true && lowerCase === false && numericValue === false && specialChar===false){
+    shuffleArray(upperCaseOnly);
+    console.log(upperCaseOnly);
+    
+var upperCaseOnlySlice=upperCaseOnly.slice(0, passwordLength);
+console.log(upperCaseOnlySlice);
+var finalPassword= upperCaseOnlySlice.join('')
+console.log(finalPassword);
+alert(finalPassword);
+     
+ }
+ //lowerCase Only
+ else if (upperCase === false && lowerCase === true && numericValue === false && specialChar===false){
+    shuffleArray(lowerCaseOnly);
+    console.log(lowerCaseOnly);
+    
+var lowerCaseOnlySlice=lowerCaseOnly.slice(0, passwordLength);
+console.log(lowerCaseOnlySlice);
+var finalPassword= lowerCaseOnlySlice.join('')
+console.log(finalPassword);
+alert(finalPassword);
+     
+ }
+//numberOnly
+ else if (upperCase === false && lowerCase === false && numericValue === true && specialChar===false){
+    shuffleArray(numberOnly);
+    console.log(numberOnly);
+    
+var numberOnlySlice=numberOnly.slice(0, passwordLength);
+console.log(numberOnlySlice);
+var finalPassword= numberOnlySlice.join('')
+console.log(finalPassword);
+alert(finalPassword);
+     
+ }
+//special Character Only
+ else if (upperCase === false && lowerCase === false && numericValue === false && specialChar === true){
+    shuffleArray(specialCharOnly);
+    console.log(specialCharOnly);
+    
+var specialCharOnlySlice=specialCharOnly.slice(0, passwordLength);
+console.log(specialCharOnlySlice);
+var finalPassword= specialCharOnlySlice.join('')
+console.log(finalPassword);
+alert(finalPassword);
+     
+ }
+
+//upperCaseLowerCaseOnly
+else if (upperCase === true && lowerCase === true && numericValue === false && specialChar===false){
+    shuffleArray(upperCaseLowerCaseOnly);
+    console.log(upperCaseLowerCaseOnly);
+    
+var upperCaseLowerCaseOnlySlice=upperCaseLowerCaseOnly.slice(0, passwordLength);
+console.log(upperCaseLowerCaseOnlySlice);
+var finalPassword= upperCaseLowerCaseOnlySlice.join('')
+console.log(finalPassword);
+alert(finalPassword);
+     
+ }
+
+ //upperCaseNumberOnly
+else if (upperCase === true && lowerCase === false && numericValue === true && specialChar===false){
+    shuffleArray(upperCaseNumberOnly);
+    console.log(upperCaseNumberOnly);
+    
+var upperCaseNumberOnlySlice=upperCaseNumberOnly.slice(0, passwordLength);
+console.log(upperCaseNumberOnlySlice);
+var finalPassword= upperCaseNumberOnlySlice.join('')
+console.log(finalPassword);
+alert(finalPassword);
+     
+ }          
+
+//upperCaseSpecialCharOnly
+else if (upperCase === true && lowerCase === false && numericValue === false && specialChar===true){
+    shuffleArray(upperCaseSpecialCharOnly);
+    console.log(upperCaseSpecialCharOnly);
+    
+var upperCaseSpecialCharOnlySlice=upperCaseSpecialCharOnly.slice(0, passwordLength);
+console.log(upperCaseSpecialCharOnlySlice);
+var finalPassword= upperCaseSpecialCharOnlySlice.join('')
+console.log(finalPassword);
+alert(finalPassword);
+     
+ }          
+
+//lowerCaseNumberOnly
+else if (upperCase === false && lowerCase === true && numericValue === true && specialChar===false){
+    shuffleArray(lowerCaseNumberOnly);
+    console.log(lowerCaseNumberOnly);
+    
+var lowerCaseNumberOnlySlice=lowerCaseNumberOnly.slice(0, passwordLength);
+console.log(lowerCaseNumberOnlySlice);
+var finalPassword= lowerCaseNumberOnlySlice.join('')
+console.log(finalPassword);
+alert(finalPassword);
+     
+ }
+
+//lowerCaseSpecialCharOnly  
+else if (upperCase === false && lowerCase === true && numericValue === false && specialChar===true){
+    shuffleArray(lowerCaseSpecialCharOnly);
+    console.log(lowerCaseSpecialCharOnly);
+    
+var lowerCaseSpecialCharOnlySlice=lowerCaseSpecialCharOnly.slice(0, passwordLength);
+console.log(lowerCaseSpecialCharOnlySlice);
+var finalPassword= lowerCaseSpecialCharOnlySlice.join('')
+console.log(finalPassword);
+alert(finalPassword);
+     
+ }  
+//numberSpecialCharOnly
+else if (upperCase === false && lowerCase === false && numericValue === true && specialChar===true){
+    shuffleArray(numberSpecialCharOnly);
+    console.log(numberSpecialCharOnly);
+    
+var numberSpecialCharOnlySlice=numberSpecialCharOnly.slice(0, passwordLength);
+console.log(numberSpecialCharOnlySlice);
+var finalPassword= numberSpecialCharOnlySlice.join('')
+console.log(finalPassword);
+alert(finalPassword);
+     
+ }              
+
+//upperLowerNumber
+else if (upperCase === true && lowerCase === true && numericValue === true && specialChar===false){
+    shuffleArray(upperLowerNumber);
+    console.log(upperLowerNumber);
+    
+var upperLowerNumberSlice=upperLowerNumber.slice(0, passwordLength);
+console.log(upperLowerNumberSlice);
+var finalPassword= upperLowerNumberSlice.join('')
+console.log(finalPassword);
+alert(finalPassword);
+     
+ }                              
+//upperNumberSpecial
+else if (upperCase === true && lowerCase === false && numericValue === true && specialChar===true){
+    shuffleArray(upperNumberSpecial);
+    console.log(upperNumberSpecial);
+    
+var upperNumberSpecialSlice=upperNumberSpecial.slice(0, passwordLength);
+console.log(upperNumberSpecialSlice);
+var finalPassword= upperNumberSpecialSlice.join('')
+console.log(finalPassword);
+alert(finalPassword);
+     
+ }                          
+//upperLowerSpecial 
+else if (upperCase === true && lowerCase === true && numericValue === false && specialChar===true){
+    shuffleArray(upperLowerSpecial);
+    console.log(upperLowerSpecial);
+    
+var upperLowerSpecialSlice=upperLowerSpecial.slice(0, passwordLength);
+console.log(upperLowerSpecialSlice);
+var finalPassword= upperLowerSpecialSlice.join('')
+console.log(finalPassword);
+alert(finalPassword);
+     
+ }                          
+//lowerNumberSpecial    
+else if (upperCase === false && lowerCase === true && numericValue === true && specialChar===true){
+    shuffleArray(lowerNumberSpecial);
+    console.log(lowerNumberSpecial);
+    
+var lowerNumberSpecialSlice=lowerNumberSpecial.slice(0, passwordLength);
+console.log(lowerNumberSpecialSlice);
+var finalPassword= lowerNumberSpecialSlice.join('')
+console.log(finalPassword);
+alert(finalPassword);
+ 
+}
+
+
+
+
+
+
+
+}
 
