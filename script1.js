@@ -93,5 +93,20 @@ function includeSpecialChar(){
                 alert("you have excluded special character");}
             }
 
-            
+
+// declare function to get password length
+function getPasswordLength(){
     
+    passwordLength = prompt("please enter in a password length that is greater than 8 characters but less than 128 characters");
+    
+    
+    if (passwordLength >= 8 && passwordLength<= 128){
+        confirm("you have entered "+passwordLength);
+        console.log(passwordLength);}
+    
+    
+    else {alert("please enter in a valid number");
+    getPasswordLength()
+    
+    }
+    }
