@@ -32,3 +32,19 @@ var upperNumberSpecial = upperCaseLetters.concat(numbers, specialCharacters);
 var upperLowerSpecial = upperCaseLetters.concat(lowerCaseLetters, specialCharacters);           
 var lowerNumberSpecial = lowerCaseLetters.concat(numbers, specialCharacters)
 
+
+//declare function to log if user wants to include upper case
+function includeUppercase(){
+
+    var upperCaseResponse = window.confirm("Include Uppercase?");
+    if (upperCaseResponse==true) {
+        upperCase=true;
+        console.log("user wants to inclue uppercase "+upperCase)
+        alert("you have included uppercase");
+        
+    }
+    else {
+        upperCase=false;
+        console.log("user wants to exclude uppercase "+upperCase)
+        alert("you have excluded uppercase");}
+    }
