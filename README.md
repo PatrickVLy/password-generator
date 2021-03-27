@@ -143,6 +143,9 @@ function includeSpecialChar(){
 * UpperCase & LowerCase & Special Characters				
 * LowerCase & Number & Special Characters
 
+   ### 4 Parameter Password
+* UpperCase & Lower Case & Number & Special Characters
+
 8. In the global scope, I have created 4 different arrays:
 upperCaseLetters, lowerCaseLetters, numbers, and specialCharacters.
 
