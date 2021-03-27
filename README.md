@@ -151,7 +151,7 @@ upperCaseLetters, lowerCaseLetters, numbers, and specialCharacters.
 
 9. Depending on the combination of password parameters that the user has selected, I used the array method <br>```.concat()``` to join the selected arrays together and stored that into a new array. 
 
-10. Once the arrays have been concatenated into a single new array, I used an algothrthm called the ***Fisher-Yates Algorithm*** to randomly shuffle the array and returned the items in a randomly shuffled order. this is the function that I used:
+10. Once the arrays have been concatenated into a single new array, I used an algorithm called the ***Fisher-Yates Algorithm*** to randomly shuffle the array and returned the items in a randomly shuffled order. this is the function that I used:
 
 ```
 function shuffleArray(array){
