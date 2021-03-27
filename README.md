@@ -32,15 +32,90 @@
  This is what I did for my code: 
  1. user will click on button to start password-generator
  2. when button is clicked prompt will pop up asking user to enter in a valid amount between 8 and 128 if user puts in an invalid amount they will get a message telling them to put in a valid amount. when the input is a valid number length, function will store that value into a variable called "passwordLength"
-
+```
+function getPasswordLength(){
+    
+    passwordLength = prompt("please enter in a password length that is greater than 8 characters but less than 128 characters");
+    
+    
+    if (passwordLength >= 8 && passwordLength<= 128){
+        confirm("you have entered "+passwordLength);
+        console.log(passwordLength);}
+    
+    
+    else {alert("please enter in a valid number");
+    getPasswordLength()}
+    }
+    
+```
  3. after user confirms password length, user will be prompted with a confirmation popup to see if they want to inclue uppercase letters, if yes, this will be stored into a variable called "upperCase" with a boolean value of true, if no, variable will be logged as false. 
+ ```
+ function includeUppercase(){
 
+    var upperCaseResponse = window.confirm("Include Uppercase?");
+    if (upperCaseResponse==true) {
+        upperCase=true;
+        console.log("user wants to inclue uppercase "+upperCase)
+        alert("you have included uppercase");
+        
+    }
+    else {
+        upperCase=false;
+        console.log("user wants to exclude uppercase "+upperCase)
+        alert("you have excluded uppercase");}
+    }
+```
  4. after user has confirmed to include or exclude uppercase, user will be prompted with a confirmation popup to see if they want to include lowercase letters, if yes, function will store response into the variable "lowerCase" with a boolean value of true, otherwise the function will log it as false
+```
+function includeLowercase(){
+    var lowerCaseResponse = window.confirm("Include lowercase?");
+        if (lowerCaseResponse==true) {
+               
+        lowerCase=true;
+        console.log("user wants to inclue lowerCase "+lowerCase)
+        alert("you have included lowerCase");
+        }
+        else {
+                
+        lowerCase=false;
+        console.log("user wants to exclude lowerCase "+lowerCase)
+        alert("you have excluded lowerCase");}
+            }
+```
 
 5. after user has confirmed to include or exclude lowercase, user will be prompted with a confirmation popup to see if they want to include numeric value, if yes, function will store response into the variable "numericValue" with a boolean value of true, otherwise the function will log it as false
+```
+function includeNumber(){
+    
+    var numericValueResponse = window.confirm("Include numericValue");
+    if (numericValueResponse==true) {
+        numericValue=true;
+        console.log("user wants to inclue numeric value "+numericValue)
+        alert("you have included numericValue");
+    }
+    else {
+        numericValue=false;
+        console.log("user wants to exclude numeric value "+numericValue)
+        alert("you have excluded numeric value");}
+    }
+```
 
 6. after user has confirmed to include or exclude numeric value the function will prompt the user to see if they want to include special characters. if yes, the function will store the respose as a boolean value of true to the "specialChar" variable. otherwise it will log the variable as false. 
+```
+function includeSpecialChar(){
+    var specialCharResponse = window.confirm("Include special character?");
+               if (specialCharResponse==true) {
+                specialChar=true;
+                console.log("user wants to inclue special character? "+specialChar)
+                alert("you have included special character?");
+            }
+            else {
+                specialChar=false;
+                console.log("user wants to exclude special character "+specialChar)
+                alert("you have excluded special character");}
+            }
 
+```
 7. Once the variables: <br>
 ```var upperCase;```<br>
 ```var lowerCase;```<br>
@@ -90,4 +165,15 @@ return array;
 11. once the array has been randomly shuffled, I used the array method ```.slice()``` where I fed in 2 parameters; the start of the array which is index [0] , and the second paramer will take in the value of ```passwordLength``` this will return part of the shuffled array from the index [0] to the index of the user specified password length. 
 
 12. Once we sliced out the section of the array, I used the ```.join()``` array method to combine the items in the array to a single string and assigned it to a variable called ```finalPassword``` and plugged that variable into an ```alert()``` pop up as well as plugging that string into the text box on the UI. 
+<hr>
 
+## Technology Used
+1. HTML
+2. CSS
+3. Javascript
+4.  [The Fisher-Yates Shuffle Algorithm](https://en.wikipedia.org/wiki/Fisher–Yates_shuffle)
+<hr>
+
+## Screenshot
+
+![alt text](/assets/images/photo.png)
